@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>小哒智能科技</title>
+
+     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+
+
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+      <!-- 引入 Bootstrap -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+      <!-- <link href="bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+      <!-- <link href="swiper/swiper-4.1.6.min.css" rel="stylesheet"> -->
+      <link href="css/font.css" rel="stylesheet">
+      <link href="css/navbar.css" rel="stylesheet">
+      <link href="css/section.css" rel="stylesheet">
+      <link href="css/media.css" rel="stylesheet">
+ 
+   </head>
+<body>
+
+<nav class="navbar navbar-color navbar-fixed-top" role="navigation">
+        <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#home">小哒智能科技</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a class="active" href="#home">首页</a></li>
+                <li><a href="#services">核心技术</a></li>
+                <li><a href="#application">应用场景</a></li>
+                <li><a href="#contact">关于我们</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+<div class="jumbotron" id="home">
+    <div class="intro">
+       <div class="container">
+            <div class="row">
+                <h1 class="text-center intro-title">不断进化 只为懂你</span></h1>
+                <br>
+                <h3 class="text-center sub-title">打造智能开放低成本的自然语言对话平台 </h3><br/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class = "core-tech" id="services">
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row features tech-header">
+                <div class="col-md-12 text-center">
+                    <br><br>
+                    <h1 class = "core-tech-title">核心技术</h1>
+                    <div class="divide-line technology-line"></div>
+                </div>
+            </div>
+            <div class="row features">
+                    <div class="col-sm-12 col-xs-12 col-md-4 tech-item">
+                        <img src="images/icon/robot-3.png" class="img-responsive center-block " alt="">
+                        <p class="tech-item-name text-center">智能</p>
+                        <div class="divide-line bg-blue"></div>
+                        <p class="desc">准确理解用户的意图，支持多轮和多场景会话，支持灵活的多上下文切换，满足各种商业系统的内在需要。</p>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-md-4 tech-item">
+                        <img src="images/icon/open-new2.png" class="img-responsive center-block" alt="">
+                        <p class="tech-item-name text-center">开放</p>
+                        <div class="divide-line bg-blue"></div>
+                        <p class="desc"> 开放、可定制的自然语言处理平台，为不同商业领域的企业和个人提供可以完成复杂任务的对话机器人构建能力。</p>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-md-4 tech-item">
+                        <img src="images/icon/decline-new.png" class="img-responsive center-block" alt="">
+                        <p class="tech-item-name text-center">低成本</p>
+                        <div class="divide-line bg-blue"></div>
+                        <p class="desc">独创的算法和解决方案以及面向对话任务的专有语言框架和工具链，可以极大的降低智能对话系统的构建成本。</p>
+                    </div>
+            </div>
+        
+        </div>
+ </section>
+ 
+<section class="application" id="application">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12  col-xs-12 text-left">
+                    <h1 >应用场景</h1>
+                    <hr>
+                    <p class= "app-desc text-left">  &nbsp &nbsp 智能对话任务系统有非常广阔的应用场景，例如车载、物联网（如智能音箱，
+                        智能家电）、智能客服、智能导游、儿童教育、银行、
+                            保险、零售等，均对具有良好体验的，可以完成复杂商业任务的自然语言智能对话系统有非常巨大的需求。</p>
+                    <p class= "app-desc text-left">  &nbsp &nbsp 智能客服作为小哒智能科技率先关注的市场领域，有上千亿级别的市场规模。很多电商和微商均对智能对话客服系统有内在需求，
+                        但是客服领域的对话具有场景复杂、语言自由灵活、业务相关性大等特点，对基于自然语言理解的智能对话系统有更高的技术要求。</p>
+                    <p class= "app-desc text-left">  &nbsp &nbsp 小哒智能科技为微商客户提供的智能客服交互产品，不仅实现了智能客服功能，还支持智能导购，移动支付等复杂对话任务，具有很好的用户体验。
+                    </p>
+                    <div class = "button-box" >
+                        <button id="play-demo" onclick="playPause()" class="btn btn-primary center-block" data-loading-text="播放中" 
+                             type="button"> 播放演示
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12  col-xs-12">
+                        <div class = "pic-box  big-pic center-block" >
+                                <video id = "video-demo" src="images/display-conpress.mp4" preload="false" controls></video>
+                </div>                    
+                </div>
+            </div>
+        </div>
+</section>
+
+<section class="contact" id="contact">
+        <div class="container">
+                <div class="row features navbar-reserve">
+                        <div class="col-md-12 text-center">
+                            <h1 >关于我们</h1>
+                            <div class="divide-line"></div>
+                        </div>
+                </div>   
+                <div class="row">
+                        <div class="col-md-12 inner-page">
+                            <p class= "about-our-company" align=left>
+                                   小哒智能科技, 致力于打造智能开放低成本的自然语言处理平台，为广大的中小企业和个人提供智能服务。
+                                公司由业界顶尖的技术专家和软件架构师组成，在云计算、大数据、人工智能等领域有很多实践经验，
+                                曾长期为各大知名企业提供软件架构设计指导和解决方案。
+                                借助对软件设计的深刻理解和对软件工程及团队运作的深厚经验，让我们能够更加聚焦于用户的真实问题，将理论与技术进行结合，博采众长，高效的将设想转化为产品和解决方案，使人工智能技术在真实的商业项目中快速落地。
+                                 </p>
+                            <br>
+                            <p align=center>地址：上海浦东新区金科路浦东软件园</p>                        
+                            <p align=center>联系邮箱：hr@xiaoda.ai</p>
+                        </div>
+                </div>
+        </div>
+</section>
+
+<footer id="footer">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-4 col-md-4 ">
+                        <br>
+                        <a href="#home">小哒智能科技</a>
+                    </div>
+                    <div class="col-sm-8 col-xs-8 col-md-4">
+                         <br>
+                        <a>版权：小哒智能科技（上海）有限公司</a> 
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-md-4 ">
+                        <br>
+                        <nav class="footer-menu">
+                            <ul>
+                                <li><a href="#home">首页</a></li>
+                                <li><a href="#home">社区</a></li>
+                                <li><a href="#contact">联系我们</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+ 
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+    var myVideo=document.getElementById("video-demo");
+    function playPause()
+    { 
+    if (myVideo.paused) 
+    myVideo.play(); 
+    else 
+    myVideo.pause(); 
+    } 
+</script>
+
+<script>
+    $(function(){
+    navFun();
+    $('.navbar-nav>li>a.active').click();
+    addjustSize();
+
+    function addjustSize()
+    {
+        console.log($(window).height())
+        $('.intro').css("min-height", $(window).height());
+        $('.contact').css("min-height", $(window).height() - $("#footer").css("min-leight"));
+    }
+
+    function navFun(){
+        $('.nav>li>a').click(function() {
+            var top = $($(this).attr("href")).offset().top;
+            $("html, body").animate({
+                scrollTop: top}, {duration: 500,easing: "swing"});
+            return false;
+        });
+        }
+    })
+    
+</script>
+   </body>
+</html>

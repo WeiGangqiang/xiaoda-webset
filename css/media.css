@@ -1,0 +1,30 @@
+@media screen and (max-width: 1024px) {
+
+    .app-desc{
+        /* display: block; */
+        /* padding-top: 20px; */
+        /* font-size: 10px; */
+        font-size: 16px;
+        font-weight: 200;
+        /* width:480px; */
+        /* margin-right: auto;
+        margin-left: auto */
+    }
+
+
+    .about-our-company {
+        font-size: 16px;
+    }
+
+
+    section.core-tech .desc {
+        opacity:1;
+        filter:alpha(opacity=100);
+    }
+    
+
+    .sub-title{
+        font-size: 14px;
+    }
+
+}
