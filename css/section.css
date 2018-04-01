@@ -265,10 +265,6 @@ section.application .pull-left {
     /* border:1px solid #000 */
 }
 
-.input_text{
-    width:600px;
-}
-
 .output-box{
     margin-top: 20px;
     vertical-align:middle; /* 居中对齐， */ 
@@ -286,4 +282,3 @@ section.application .pull-left {
     margin-top: 20px;
     /* border:1px solid #000 */
 }
-

@@ -4,6 +4,7 @@
       <title>小哒智能科技</title>
 
      <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+     <meta http-equiv="Access-Control-Allow-Origin" content="*" />
 
 
       <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
@@ -118,7 +119,7 @@
     <div class="container">
             <div class="row features navbar-reserve">
                     <div class="col-md-12 text-center">
-                        <h1 >句子纠错</h1>
+                        <h1 >文本纠错</h1>
                         <div class="divide-line"></div>
                     </div>
             </div>   
@@ -126,7 +127,7 @@
                     <div class="col-md-12 correct-box">
                             <div class="input-box">
                                     <p> 请输入您想纠错文字：   </p>
-                                    <textarea id= "input_text" class="form-control" rows="3" name=textarea></textarea>
+                                    <textarea id= "input_text" class="form-control"  style="font-size:16px;" rows="3" name=textarea></textarea>
                             </div>
 
                             <div class = "correct-button-box">
@@ -213,10 +214,46 @@
         console.log(" input_text" + input_text.value)
         output_text.innerHTML = ""
         // output_text.appendChild(createNormalP(input_text.value))
+        // $.get("http://localhost:5000", function(data,status){
+        //    console.log("Data: " + data + "\nStatus: " + status);
+        // });
+        getCorrectResult(input_text.value)
+
         output_text.appendChild(createNormalP("我真的很"))
-        // output_text.appendChild(createHightlightP("错误"))
         output_text.appendChild(createHightlightP("想"))
         output_text.appendChild(createNormalP("你"))
+    }
+
+    function getCorrectResult(text)
+    {
+        $.support.cors = true;
+
+        $.ajax("http://47.100.99.213", "get").done(function(result){
+            console.log(result)
+            console.error("你好好哈哈     =========")
+            alert(result); }
+        )
+
+//         $.post("http://localhost:8080/correct",{text:"你好"},function(result){
+//             console.log(result)
+//            alert(result);
+      
+//   });
+
+    //     $.support.cors = true;
+    //     $.ajax({
+    //     url:"http://localhost:8080/correct",
+    //     type:"post",
+    //     contentType:'application/json',
+    //     headers : {Accept : "application/json","Access-Control-Allow-Origin" : "*"},
+    //     crossDomain: true,
+    //     data: JSON.stringify({text: "我真的好想你"}),
+    //     success :function (result){
+    //         console.log(result)
+    //         alert(result);
+    //     },error:function (){
+    //         alert("add category failed!");
+    // }});
     }
 
 
@@ -246,6 +283,10 @@
     navFun();
     $('.navbar-nav>li>a.active').click();
     addjustSize();
+
+    // $.get("http://localhost:5000", function(data,status){
+    // console.log("Data: " + data + "\nStatus: " + status);
+    // });
 
     function addjustSize()
     {
