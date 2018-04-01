@@ -228,17 +228,17 @@
     {
         $.support.cors = true;
 
-        $.ajax("http://47.100.99.213", "get").done(function(result){
-            console.log(result)
-            console.error("你好好哈哈     =========")
-            alert(result); }
-        )
+        // $.ajax("http://47.100.99.213", "get").done(function(result){
+        //     console.log(result)
+        //     console.error("你好好哈哈     =========")
+        //     alert(result); }
+        // )
 
-//         $.post("http://localhost:8080/correct",{text:"你好"},function(result){
-//             console.log(result)
-//            alert(result);
+        $.post("http://localhost:8080/correct",{text:"你好"},function(result){
+            console.log(result)
+           alert(result);
       
-//   });
+  });
 
     //     $.support.cors = true;
     //     $.ajax({
