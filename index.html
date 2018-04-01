@@ -212,47 +212,57 @@
         var input_text = document.getElementById("input_text");
         var output_text = document.getElementById("output-box")
         console.log(" input_text" + input_text.value)
-        output_text.innerHTML = ""
-        // output_text.appendChild(createNormalP(input_text.value))
-        // $.get("http://localhost:5000", function(data,status){
-        //    console.log("Data: " + data + "\nStatus: " + status);
-        // });
         getCorrectResult(input_text.value)
-
-        output_text.appendChild(createNormalP("我真的很"))
-        output_text.appendChild(createHightlightP("想"))
-        output_text.appendChild(createNormalP("你"))
     }
-
-    function getCorrectResult(text)
+    
+    function getCorrectResult(input)
     {
         $.support.cors = true;
-
-        // $.ajax("http://47.100.99.213", "get").done(function(result){
-        //     console.log(result)
-        //     console.error("你好好哈哈     =========")
-        //     alert(result); }
-        // )
-
-        $.post("http://47.100.99.213/correct",{text:"你好"},function(result){
+        $.post("http://47.100.99.213/correct", {text:input}, function(result){
+            generate_output(input, result)
             console.log(result)
-            alert(result);
        });
+    }
 
-    //     $.support.cors = true;
-    //     $.ajax({
-    //     url:"http://localhost:8080/correct",
-    //     type:"post",
-    //     contentType:'application/json',
-    //     headers : {Accept : "application/json","Access-Control-Allow-Origin" : "*"},
-    //     crossDomain: true,
-    //     data: JSON.stringify({text: "我真的好想你"}),
-    //     success :function (result){
-    //         console.log(result)
-    //         alert(result);
-    //     },error:function (){
-    //         alert("add category failed!");
-    // }});
+    function generate_output(input, result){
+          var output_text = document.getElementById("output-box")
+          output_text.innerHTML = ""
+          var equal_start = -1;
+          var nequal_start = -1;
+          for(var i = 0; i < input.length; i++){
+            var c = input.charAt(i); 
+            var d = result.charAt(i);
+            if(c == d){
+                if (equal_start == -1){
+                    equal_start = i;
+                }
+                if(nequal_start != -1){
+                    output_text.appendChild(createHightlightP(result.substring(nequal_start, i)))
+                    console.log("not equal Is" + result.substring(nequal_start, i))
+                    nequal_start = -1
+                }
+            }
+            else{
+                if(nequal_start == -1){
+                    nequal_start = i;
+                }
+
+                if(equal_start != -1){
+                    output_text.appendChild(createNormalP(result.substring(equal_start, i)))
+                    console.log("equal is " + result.substring(equal_start, i))
+                    equal_start = -1
+                }
+            }
+         }
+         if(equal_start != -1){
+            console.log("equal is " + result.substring(equal_start, i))
+            output_text.appendChild(createNormalP(result.substring(equal_start, i)))
+         }
+
+         if(nequal_start != -1){
+            console.log("not equal Is" + result.substring(nequal_start, i))
+            output_text.appendChild(createHightlightP(result.substring(nequal_start, i)))
+        }
     }
 
 
