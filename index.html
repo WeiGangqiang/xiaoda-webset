@@ -234,11 +234,10 @@
         //     alert(result); }
         // )
 
-        $.post("http://localhost:8080/correct",{text:"你好"},function(result){
+        $.post("http://47.100.99.213:8080/correct",{text:"你好"},function(result){
             console.log(result)
-           alert(result);
-      
-  });
+            alert(result);
+       });
 
     //     $.support.cors = true;
     //     $.ajax({
@@ -283,10 +282,6 @@
     navFun();
     $('.navbar-nav>li>a.active').click();
     addjustSize();
-
-    // $.get("http://localhost:5000", function(data,status){
-    // console.log("Data: " + data + "\nStatus: " + status);
-    // });
 
     function addjustSize()
     {
