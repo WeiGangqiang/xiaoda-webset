@@ -253,3 +253,37 @@ section.application .pull-left {
 }
 
 
+.correct-box{
+    /* width:320px; */
+    min-height: 650px;
+}
+
+.input-box {
+    margin-top: 100px;
+    vertical-align:middle; /* 居中对齐， */ 
+    font-size:14px; 
+    /* border:1px solid #000 */
+}
+
+.input_text{
+    width:600px;
+}
+
+.output-box{
+    margin-top: 20px;
+    vertical-align:middle; /* 居中对齐， */ 
+    font-size:14px; 
+    border:1px solid #cee3e9;
+    background:#f1f7f9;
+    min-height: 100px;
+}
+
+.output-box p{
+    float:left;
+}
+
+.correct-button-box {
+    margin-top: 20px;
+    /* border:1px solid #000 */
+}
+

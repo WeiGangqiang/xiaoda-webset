@@ -114,6 +114,32 @@
         </div>
 </section>
 
+<section class="correct" id="correct">
+    <div class="container">
+            <div class="row features navbar-reserve">
+                    <div class="col-md-12 text-center">
+                        <h1 >句子纠错</h1>
+                        <div class="divide-line"></div>
+                    </div>
+            </div>   
+            <div class="row">
+                    <div class="col-md-12 correct-box">
+                            <div class="input-box">
+                                    <p> 请输入您想纠错文字：   </p>
+                                    <textarea id= "input_text" class="form-control" rows="3" name=textarea></textarea>
+                            </div>
+
+                            <div class = "correct-button-box">
+                                <button type="button" onclick="error_correct()" class="btn btn-primary center-block">纠错</button>
+                            </div>
+                            <p> 分析结果：   </p>
+                            <div id= "output-box" class="output-box">
+                            </div>
+                    </div>
+            </div>
+    </div>
+</section>
+
 <section class="contact" id="contact">
         <div class="container">
                 <div class="row features navbar-reserve">
@@ -180,6 +206,39 @@
     else 
     myVideo.pause(); 
     } 
+    function error_correct()
+    {
+        var input_text = document.getElementById("input_text");
+        var output_text = document.getElementById("output-box")
+        console.log(" input_text" + input_text.value)
+        output_text.innerHTML = ""
+        // output_text.appendChild(createNormalP(input_text.value))
+        output_text.appendChild(createNormalP("我真的很"))
+        // output_text.appendChild(createHightlightP("错误"))
+        output_text.appendChild(createHightlightP("想"))
+        output_text.appendChild(createNormalP("你"))
+    }
+
+
+    function createNormalP(text)
+    {
+        var normalP = document.createElement("p");
+        var txt     = document.createTextNode(text); 
+        normalP.appendChild(txt)
+        return normalP
+    }
+
+    function createHightlightP(text)
+    {
+        var normalP = document.createElement("p");
+        normalP.style.backgroundColor = "yellow"
+        var txt     = document.createTextNode(text); 
+        normalP.appendChild(txt)
+        return normalP
+    }
+
+
+
 </script>
 
 <script>
