@@ -90,7 +90,7 @@
 <section class="application" id="application">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-sm-12  col-xs-12 text-left">
+                <div class="col-md-4 col-sm-12  col-xs-12 text-left">
                     <h1 >应用场景</h1>
                     <hr>
                     <p class= "app-desc text-left">  &nbsp &nbsp 智能对话任务系统有非常广阔的应用场景，例如车载、物联网（如智能音箱，
@@ -100,16 +100,26 @@
                         但是客服领域的对话具有场景复杂、语言自由灵活、业务相关性大等特点，对基于自然语言理解的智能对话系统有更高的技术要求。</p>
                     <p class= "app-desc text-left">  &nbsp &nbsp 小哒智能科技为微商客户提供的智能客服交互产品，不仅实现了智能客服功能，还支持智能导购，移动支付等复杂对话任务，具有很好的用户体验。
                     </p>
+                    <p class= "app-desc text-left">  &nbsp &nbsp 小哒智能科技为小米开发智能应用我的课表也即将上线...
+                    </p>
                     <div class = "button-box" >
-                        <button id="play-demo" onclick="playPause()" class="btn btn-primary center-block" data-loading-text="播放中" 
-                             type="button"> 播放演示
+                        <button id="play-demo" onclick="playPause1()" class="btn btn-primary left-block" data-loading-text="播放中" 
+                             type="button"> 播放演示1
+                        </button>
+                        <button id="play-demo" onclick="playPause2()" class="btn btn-primary right-block" data-loading-text="播放中" 
+                              type="button"> 播放演示2
                         </button>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12  col-xs-12">
                         <div class = "pic-box  big-pic center-block" >
-                                <video id = "video-demo" src="images/display-conpress.mp4" preload="false" controls></video>
-                </div>                    
+                                <video id = "video-demo1" src="images/display-conpress.mp4" preload="false" controls></video>
+                         </div>                    
+                </div>
+                <div class="col-md-4 col-sm-12  col-xs-12">
+                    <div class = "pic-box  big-pic center-block" >
+                            <video id = "video-demo2" src="images/my-course2.mp4" preload="false" controls></video>
+                     </div>                    
                 </div>
             </div>
         </div>
@@ -199,13 +209,22 @@
 
 
 <script type="text/javascript">
-    var myVideo=document.getElementById("video-demo");
-    function playPause()
+    var myVideo1=document.getElementById("video-demo1");
+    var myVideo2=document.getElementById("video-demo2");
+    function playPause1()
     { 
-    if (myVideo.paused) 
-    myVideo.play(); 
+    if (myVideo1.paused) 
+    myVideo1.play(); 
     else 
-    myVideo.pause(); 
+    myVideo1.pause(); 
+    } 
+
+    function playPause2()
+    { 
+    if (myVideo2.paused) 
+    myVideo2.play(); 
+    else 
+    myVideo2.pause(); 
     } 
     function error_correct()
     {
