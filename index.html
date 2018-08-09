@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>小哒智能科技</title>
+      <title>小哒智能科技(上海)有限公司</title>
 
      <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
      <meta http-equiv="Access-Control-Allow-Origin" content="*" />
@@ -16,12 +16,11 @@
       <link href="css/navbar.css" rel="stylesheet">
       <link href="css/section.css" rel="stylesheet">
       <link href="css/media.css" rel="stylesheet">
- 
    </head>
 <body>
 
 <nav class="navbar navbar-color navbar-fixed-top" role="navigation">
-        <div class="container">
+    <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -39,17 +38,15 @@
                 <li><a href="#contact">关于我们</a></li>
             </ul>
         </div>
-        </div>
-    </nav>
+    </div>
+</nav>
+
 <div class="jumbotron" id="home">
     <div class="intro">
-       <div class="container">
-            <div class="row">
-                <h1 class="text-center intro-title">不断进化 只为懂你</span></h1>
-                <br>
-                <h3 class="text-center sub-title">打造智能开放低成本的自然语言对话平台 </h3><br/>
-            </div>
-        </div>
+       <div>
+        <h2 class="text-center slogan">不断进化 只为懂你</h2>
+        <h3 class="text-center sub-title" style="margin-top: 50px">打造智能开放低成本的自然语言处理平台</h3>
+     </div>  
     </div>
 </div>
 
@@ -59,25 +56,25 @@
             <div class="row features tech-header">
                 <div class="col-md-12 text-center">
                     <br><br>
-                    <h1 class = "core-tech-title">核心技术</h1>
+                    <h1 style="color: #000000">核心技术</h1>
                     <div class="divide-line technology-line"></div>
                 </div>
             </div>
             <div class="row features">
                     <div class="col-sm-12 col-xs-12 col-md-4 tech-item">
-                        <img src="images/icon/robot-3.png" class="img-responsive center-block " alt="">
+                        <img src="images/icon/robot.png" class="img-responsive center-block " alt="">
                         <p class="tech-item-name text-center">智能</p>
                         <div class="divide-line bg-blue"></div>
                         <p class="desc">准确理解用户的意图，支持多轮和多场景会话，支持灵活的多上下文切换，满足各种商业系统的内在需要。</p>
                     </div>
                     <div class="col-sm-12 col-xs-12 col-md-4 tech-item">
-                        <img src="images/icon/open-new2.png" class="img-responsive center-block" alt="">
+                        <img src="images/icon/open.png" class="img-responsive center-block" alt="">
                         <p class="tech-item-name text-center">开放</p>
                         <div class="divide-line bg-blue"></div>
                         <p class="desc"> 开放、可定制的自然语言处理平台，为不同商业领域的企业和个人提供可以完成复杂任务的对话机器人构建能力。</p>
                     </div>
                     <div class="col-sm-12 col-xs-12 col-md-4 tech-item">
-                        <img src="images/icon/decline-new.png" class="img-responsive center-block" alt="">
+                        <img src="images/icon/low.png" class="img-responsive center-block" alt="">
                         <p class="tech-item-name text-center">低成本</p>
                         <div class="divide-line bg-blue"></div>
                         <p class="desc">独创的算法和解决方案以及面向对话任务的专有语言框架和工具链，可以极大的降低智能对话系统的构建成本。</p>
@@ -176,31 +173,31 @@
 </section>
 
 <footer id="footer">
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 col-xs-4 col-md-4 ">
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 col-md-4 text-center">
+                    <br>
+                    <a href="#home">小哒智能科技</a>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-4 text-center">
                         <br>
-                        <a href="#home">小哒智能科技</a>
-                    </div>
-                    <div class="col-sm-8 col-xs-8 col-md-4">
-                         <br>
-                        <a>版权：小哒智能科技（上海）有限公司</a> 
-                    </div>
-                    <div class="col-sm-12 col-xs-12 col-md-4 ">
-                        <br>
-                        <nav class="footer-menu">
-                            <ul>
-                                <li><a href="#home">首页</a></li>
-                                <li><a href="#home">社区</a></li>
-                                <li><a href="#contact">联系我们</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <a>版权：小哒智能科技（上海）有限公司</a> 
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-4">
+                    <br>
+                    <nav class="footer-menu text-center">
+                        <ul>
+                            <li><a href="#home">首页</a></li>
+                            <li><a href="#home">社区</a></li>
+                            <li><a href="#contact">联系我们</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 
  
@@ -315,7 +312,8 @@
     function addjustSize()
     {
         console.log($(window).height())
-        $('.intro').css("min-height", $(window).height());
+        $('.intro').css("height", $(window).height());
+        $('.intro').css("padding-top", $(window).height() * 0.6);
         $('.contact').css("min-height", $(window).height() - $("#footer").css("min-leight"));
     }
 

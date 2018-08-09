@@ -1,7 +1,7 @@
 section.contact{
-    background: #f5f5f5 url(../images/backgroud/map-bottom.png);
+    background: #ffffff url(../images/backgroud/worldmap.png) no-repeat center center/cover;
     min-height: 800px;
-    background-size:auto 100%;
+    /* background-size:auto 100%; */
     /* padding-top: 30px; */
     font-size: 20px;
       /* position: relative; */
@@ -19,14 +19,14 @@ section.contact li{
 
 
 section.core-tech{
-    background: url(../images/backgroud/core-tech9.png);
+    background: url(../images/backgroud/back-2.png);
     min-height: 800px;
     background-size:100% 100%; 
     width:100%;  
     height:100%;  
     padding-top: 50px;
-    font-size: 15px;
-    color : rgb(0,0,0);
+    font-size: 20px;
+    color : rgb(0,0,0,0.1);
 }
 
 
@@ -72,13 +72,14 @@ section.core-tech .desc {
 	word-break:break-all;
 	word-wrap:break-word;
 	text-align:justify;
-	color:#666;
+    columns: #000000;
+    color: #283535;
 }
 
 
-section.core-tech .tech-item-name{
+section.core-tech .-name{
     font-size: 24px;
-    color: #000;
+    color: #000000;
 }
 
 
@@ -97,7 +98,7 @@ section.core-tech .tech-item:first-child img{
 }
 
 section.core-tech .tech-item:hover .tech-item-name{
-    color: rgb(0,138,226);
+    color: #000000;
  }
  section.core-tech .tech-item:hover .divide-line{
      opacity:100;
@@ -109,7 +110,7 @@ section.core-tech .tech-item:hover .tech-item-name{
  }
 
  section.core-tech .tech-item-name:hover{
-    color: rgb(0,138,226);
+    color: #b3b8b5;
  }
 
  section.core-tech .tech-item-name:hover .desc,
@@ -125,6 +126,7 @@ section.core-tech .tech-item:hover .tech-item-name{
 section.core-tech .core-tech-title {
     /* font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; */
     font-size: 40px;
+    color: #000000;
     /* margin-bottom:100px; */
 }
 
@@ -137,7 +139,7 @@ section.core-tech .core-tech-title {
 }
 
 .footer-menu {
-    text-align: right;
+    text-align: center;
 }
 .footer-menu li{
     display: inline;
@@ -163,7 +165,7 @@ section.core-tech .core-tech-title {
 
 
 section.application{
-    background: url(../images/backgroud/appback4.jpg);
+    background: url(../images/backgroud/starry-sky.jpg);
     min-height: 750px;
     background-size:auto 100%;
     background-position: center 0;
@@ -215,7 +217,7 @@ section.application .pull-left {
 .clearfix:after, .clearfix:before,
 
 .app-header{
-    /* background: #f5f5f5 url(../images/map-bottom.png); */
+    /* background: #f5f5f5 url(../images/bottom.png); */
     /* background: rgb(28,96,149); */
     padding-top: 60px;
 }
@@ -244,7 +246,8 @@ section.application .pull-left {
 } */
 
 .app-other-item{
-    background: #f5f5f5 url(../images/map-bottom.png); 
+    background: #f5f5f5 url(../images/worldmap.png); 
+    background-repeat: no-repeat;
 }
 
 
