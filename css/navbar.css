@@ -28,12 +28,13 @@ h1 *, h2 *, h3 *, h4 *, h5 *, h6 *{
 }
 
 a {
-    color: #3E84C2;
+    color: #ffffff;
+    padding-top: 10px;
 }
 
 a:hover,
 a:focus {
-    color: #418d49;
+    color: #2e6c71;
 }
 
 .nav a:hover{
@@ -136,7 +137,7 @@ section.contact .divide-line {
     width: 60px;
     height: 3px;
     margin: 20px auto 0;
-    background-color: #3E84C2;
+    background-color: #1cb2b9;
 }
 
 .about-our-company {

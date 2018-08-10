@@ -1,6 +1,10 @@
+section.wrapper{
+    height: 800px;
+    padding-bottom: 50px;
+}
 section.contact{
     background: #ffffff url(../images/backgroud/worldmap.png) no-repeat center center/cover;
-    min-height: 800px;
+    height: 100%;
     /* background-size:auto 100%; */
     /* padding-top: 30px; */
     font-size: 20px;
@@ -20,13 +24,11 @@ section.contact li{
 
 section.core-tech{
     background: url(../images/backgroud/back-2.png);
-    min-height: 800px;
     background-size:100% 100%; 
     width:100%;  
-    height:100%;  
     padding-top: 50px;
     font-size: 20px;
-    color : rgb(0,0,0,0.1);
+    color: #2e6c71;
 }
 
 
@@ -109,8 +111,8 @@ section.core-tech .tech-item:hover .tech-item-name{
      -o-transition:all .3s ease-in;
  }
 
- section.core-tech .tech-item-name:hover{
-    color: #b3b8b5;
+ section.core-tech.tech-item-name:hover{
+    color: #2e6c71;
  }
 
  section.core-tech .tech-item-name:hover .desc,
@@ -145,24 +147,36 @@ section.core-tech .core-tech-title {
     display: inline;
     list-style: none;
     font-size: 13px;
-    /* margin-left: 10px; */
+    padding-top: 10px;
 }
 
 #footer{
     background-color: rgba(0,0,0,0.7);
-    min-height: 100px
+    height: 50px;
+    margin-bottom: -50px;
 }
 
-/* 
+
 #footer #p{
     color: #418d49;
-} */
+}
+.copyright{
+    /* height: 50px;
+    top: 850px; */
+    background-color: rgba(0,0,0,0.7);
+    height: 50px
+}
 .footer-copyright a,
 .footer-copyright p{
     color:rgb(255,255,255);
     font-size: 13px;
 }
 
+.footer-text {
+    line-height: 50px;
+    height: 50px;
+    color: #ffffff;
+}
 
 section.application{
     background: url(../images/backgroud/starry-sky.jpg);
