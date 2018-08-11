@@ -138,8 +138,13 @@ section.product {
 
 .customer-desc {
     font-size: 14px;
+    padding-top: 20px
 }
 
+.customer-logo {
+    height: 60px;
+    padding-bottom: 20px;
+}
 .inner-page{
     margin-bottom: 30px;
     padding-bottom: 30px;
