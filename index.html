@@ -34,8 +34,8 @@
             <ul class="nav navbar-nav">
                 <li><a class="active" href="#home">首页</a></li>
                 <li class="dropdown open">
-                    <li><a href="#services">核心技术</a></li>
-                    <li><a href="#application">应用场景</a></li>
+                    <li><a href="#services">商业案例</a></li>
+                    <li><a href="#application">合作伙伴</a></li>
                     <li><a href="#contact">关于我们</a></li>
                 </li>
             </ul>
@@ -52,43 +52,30 @@
     </div>
 </div>
 
-<section class = "wrapper core-tech" id="services">
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row features tech-header">
-                <div class="col-md-12 text-center">
-                    <br><br>
-                    <h1 style="color: #9f9f9f">核心技术</h1>
-                    <div class="divide-line technology-line"></div>
-                </div>
-            </div>
-            <div class="row features" style="padding-top: 100px">
-                    <div class="col-sm-12 col-xs-12 col-md-4 tech-item">
-                        <img src="images/icon/robot.png" class="img-responsive center-block " alt="">
-                        <p class="tech-item-name text-center">智能</p>
-                        <div class="divide-line bg-blue"></div>
-                        <p class="desc">准确理解用户的意图，支持多轮和多场景会话，支持灵活的多上下文切换，满足各种商业系统的内在需要。</p>
-                    </div>
-                    <div class="col-sm-12 col-xs-12 col-md-4 tech-item">
-                        <img src="images/icon/open.png" class="img-responsive center-block" alt="">
-                        <p class="tech-item-name text-center">开放</p>
-                        <div class="divide-line bg-blue"></div>
-                        <p class="desc"> 开放、可定制的自然语言处理平台，为不同商业领域的企业和个人提供可以完成复杂任务的对话机器人构建能力。</p>
-                    </div>
-                    <div class="col-sm-12 col-xs-12 col-md-4 tech-item">
-                        <img src="images/icon/low.png" class="img-responsive center-block" alt="">
-                        <p class="tech-item-name text-center">低成本</p>
-                        <div class="divide-line bg-blue"></div>
-                        <p class="desc">独创的算法和解决方案以及面向对话任务的专有语言框架和工具链，可以极大的降低智能对话系统的构建成本。</p>
-                    </div>
-            </div>
-        
-        </div>
- </section>
- 
-<section class="wrapper application" id="application">
+ <section class = "wrapper core-tech" id="services">
     <div class="container"  style="height: 100%;">
-        <div class="row application-row">
+        <div class="row">
+            <div class="col-xl-12">
+                <h1 class="text-center"> 商业案例 </h1>
+                <hr>
+                <p class= "text-left"> &nbsp &nbsp 借助小哒智能科技自研的自然语言理解平台，目前已经为诸多国内知名企业在AR游戏、智能客服、智能导购、智能音箱、个人助理等领域开发了众多体验优秀的智能对话机器人系统。</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3  col-sm-12" style="text-align: center;">
+                <!-- <a onmouseover="javascript:showImg('qiuyeqing');" onmouseout="javascript:hideImg('qiuyeqing');"><img src="images/customer/kingsoft.png" style="height: 60px; padding-bottom: 20px"> </a> -->
+                <a><img src="images/customer/kingsoft.png" href="https://v.youku.com/v_show/id_XMzU4MzczNjgzNg==.html?spm=a2h0k.11417342.soresults.dtitle" style="height: 40px; padding-bottom: 10px"> </a>
+                <div id="qiuyeqing">
+                    <img src="images/product/qiuyeqing.png" style="height: 270px;">
+                    <p class="text-left customer-desc" style="padding-top: 10px">小哒智能科技为金山游戏“剑网3”的AR NPC角色赋予了流畅的智能对话能力</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+<section class="wrapper application" id="application">
+    <div class="container"  style="height: 100%; margin-top: -50px;">
+        <div class="row">
             <div class="col-md-4 col-sm-12  col-xs-12 text-left">
                 <h1 >应用场景</h1>
                 <hr>
@@ -202,6 +189,9 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
+    function showImg(imgid){ document.getElementById(imgid).style.display = "block"; } 
+    function hideImg(imgid){ document.getElementById(imgid).style.display = "none"; } 
+
     var myVideo1=document.getElementById("video-demo1");
     var myVideo2=document.getElementById("video-demo2");
     function playPause1()

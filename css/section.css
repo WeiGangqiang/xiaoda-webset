@@ -131,7 +131,14 @@ section.core-tech .core-tech-title {
     /* margin-bottom:100px; */
 }
 
+section.product {
+    width: 100%;
+    display: "none";
+}
 
+.customer-desc {
+    font-size: 14px;
+}
 
 .inner-page{
     margin-bottom: 30px;
@@ -197,12 +204,12 @@ section.application{
     align-items: center;
 }
 
-.application-row {
+/* .application-row {
     height: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
+} */
 section.application .small-pic video,.big-pic video,
 section.application .small-pic img,.big-pic img{
     width:88%;
