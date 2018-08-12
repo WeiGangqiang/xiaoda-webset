@@ -136,6 +136,13 @@ section.product {
     display: "none";
 }
 
+.customer-img {
+    height: 360px;
+    border: 4px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+
 .customer-desc {
     font-size: 14px;
     padding-top: 20px
