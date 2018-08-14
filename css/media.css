@@ -29,9 +29,10 @@
     .sub-title {
         font-size: 16px;
         letter-spacing: 10px;
-        width: 260px;
         display: inline-block;
+        width: 260px;
         line-height: 30px;
+        margin-top: 10px;
     }
     .slogan {
         font-size: 28px;
@@ -61,6 +62,7 @@
     .sub-title {
         font-size: 30px;
         letter-spacing: 10px;
+        margin-top: 50px;
     }
     .slogan {
         font-size: 50px;
