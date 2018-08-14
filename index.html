@@ -16,10 +16,10 @@
    </head>
 <body>
 
-<nav class="navbar navbar-fixed-top navbar-inverse navbar-color" role="navigation">
-    <div class="container">
+<nav  data-spy="scroll" class="navbar navbar-fixed-top navbar-inverse navbar-color" role="navigation" data-target="#navbar-collapse">
+    <div class="container" style="position: relative;">
         <div class="navbar-header nav-title">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-haspopup="true">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-haspopup="true">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar top-bar"></span>
                 <span class="icon-bar middle-bar"></span>
@@ -29,13 +29,11 @@
                 <img src="images/icon/logo.png" style="height: 50px;"> 
             </a>
         </div>
-        <!-- <div class="collapse navbar-collapse" id="navbar-collapse"> -->
         <div class="collapse navbar-collapse navbar-right is-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a class="active" href="#home">首页</a></li>
                 <li class="dropdown open">
                     <li><a href="#customer">商业案例</a></li>
-                    <li><a href="#partner">合作伙伴</a></li>
                     <li><a href="#contact">关于我们</a></li>
                 </li>
             </ul>
@@ -98,42 +96,6 @@
     </div>
 </section>
 
-<section class="wrapper partner" id="partner">
-    <div class="container"  style="height: 100%;">
-        <div class="col-md-12 text-center" style="margin-bottom: 120px">
-            <h1 >合作伙伴</h1>
-            <div class="partner-divide-line"></div>
-        </div>
-        <div class="row">
-            <div class="col-md-3  col-sm-12" style="text-align: center;">
-                <img src="images/customer/xiaomi.png" class="partner-img">
-            </div> 
-            <div class="col-md-3  col-sm-12" style="text-align: center;">
-                <img src="images/customer/baidu.png" class="partner-img">
-            </div>
-            <div class="col-md-3  col-sm-12" style="text-align: center;">
-                <img src="images/customer/ifly.png" class="partner-img">
-            </div> 
-            <div class="col-md-3  col-sm-12" style="text-align: center;">
-                <img src="images/customer/meiqia.png" class="partner-img">
-            </div> 
-        </div>
-        <div class="row">
-            <div class="col-md-3  col-sm-12" style="text-align: center;">
-                <img src="images/customer/pingan.png" class="partner-img">
-            </div>
-            <div class="col-md-3  col-sm-12" style="text-align: center;">
-                <img src="images/customer/ali.png" class="partner-img">
-            </div> 
-            <div class="col-md-3  col-sm-12" style="text-align: center;">
-                <img src="images/customer/tencent.png" class="partner-img">
-            </div> 
-            <div class="col-md-3  col-sm-12" style="text-align: center;">
-                <img src="images/customer/kingsoft.png" class="partner-img">
-            </div>
-        </div>
-    </div>
-</section>
 <!-- 
 <section class="correct" id="correct">
     <div class="container">
@@ -189,17 +151,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-4 text-center footer-text">
-                        <a href="#home">小哒智能科技</a>
+                        <a href="#home">小哒智能科技（上海）有限公司</a>
                     </div>
                     <div class="col-sm-12 col-md-4 text-center footer-text">
-                        <a href="#home">版权：小哒智能科技（上海）有限公司</a> 
-                    </div>
+                            <br>
+                           <a href="http://www.miitbeian.gov.cn/">沪ICP备18019466号</a>
+                       </div>
                     <div class="col-sm-12 col-md-4">
                         <nav class="footer-menu text-center">
                             <ul>
+                                <li><a href="#home" class="footer-text">首页</a></li>
                                 <li><a href="#customer" class="footer-text">商业案例</a></li>
-                                <li><a href="#partner" class="footer-text">合作伙伴</a></li>
-                                <li><a href="#contact" class="footer-text">联系我们</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -316,7 +278,8 @@
     navFun();
     $('.navbar-nav>li>a.active').click();
     addjustSize();
-
+    $(window).resize(addjustSize)
+    $('body').scrollspy({ target: '.navbar-collapse' })
     function addjustSize()
     {
         console.log($(window).height())

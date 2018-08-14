@@ -23,7 +23,7 @@ section.contact li{
 
 
 .customer{
-    background: url(../images/backgroud/starry-sky.jpg);
+    background: url(../images/backgroud/hand.png);
     background-size:100% 100%; 
     width:100%;  
     padding-top: 50px;
@@ -91,40 +91,6 @@ section.contact li{
     color: #ffffff;
 }
 
-.partner{
-    background: url(../images/backgroud/hand.png);
-    min-height: 750px;
-    background-size:auto 100%;
-    background-position: center 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-
-    padding-top: 100px;
-    /* padding-block-end: 100px; */
-    font-size: 15px;
-    color : rgb(255,255,255);
-    height: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.partner-divide-line {
-    width: 180px;
-    height: 3px;
-    margin: 20px auto 0;
-    background-color: #ffffff;
-}
-.partner-img {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border: 2px;
-    border-style: solid;
-    border-color: #ffffff;
-    width: 60%;
-}
 .clearfix:after, .clearfix:before,
 
 .app-header{
