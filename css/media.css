@@ -35,8 +35,9 @@
     }
 
     .customer{
-        /* background: url(../images/backgroud/hand.png); */
-        background-size:100% 100%; 
+        /* background: url(../images/backgroud/dna.png); */
+        background-color: #2b313d; 
+        background-repeat: repeat-y;
         width:100%;
         padding-top: 50px;
         font-size: 20px;
@@ -62,7 +63,7 @@
     }
 
     .customer{
-        background: url(../images/backgroud/hand.png);
+        background: url(../images/backgroud/hand.png) no-repeat center center/cover;
         background-size:100% 100%; 
         width:100%;  
         padding-top: 50px;
