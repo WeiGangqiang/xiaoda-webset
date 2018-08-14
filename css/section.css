@@ -23,7 +23,7 @@ section.contact li{
 
 
 .customer{
-    background: url(../images/backgroud/hand.png);
+    background: url(../images/backgroud/starry-sky.jpg);
     background-size:100% 100%; 
     width:100%;  
     padding-top: 50px;
@@ -91,8 +91,8 @@ section.contact li{
     color: #ffffff;
 }
 
-section.application{
-    background: url(../images/backgroud/starry-sky.jpg);
+.partner{
+    background: url(../images/backgroud/hand.png);
     min-height: 750px;
     background-size:auto 100%;
     background-position: center 0;
@@ -111,45 +111,20 @@ section.application{
     align-items: center;
 }
 
-/* .application-row {
-    height: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-} */
-section.application .small-pic video,.big-pic video,
-section.application .small-pic img,.big-pic img{
-    width:88%;
-    height:82%;
-    margin-left: 18px;
-    margin-top: 78px;
-    border:1px solid #ececec;
+.partner-divide-line {
+    width: 180px;
+    height: 3px;
+    margin: 20px auto 0;
+    background-color: #ffffff;
 }
-section.application .pic-box{
-    background: url(../images/icon/phone-back.png);
-    width:320px;
-    min-height: 650px;
-    background-size:auto 100%;
-    background-position: center 0;
-    background-size: cover;
-    -webkit-background-size: cover;
-    margin-bottom: 50px; 
-    margin-top: 20px;
+.partner-img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    width: 60%;
 }
-
-
-
-section.application .btn-lg{
-    color: #000;
-}
-section.application .pull-right {
-    float: right !important
-}
-
-section.application .pull-left {
-    float: left !important;
-}
-
 .clearfix:after, .clearfix:before,
 
 .app-header{
