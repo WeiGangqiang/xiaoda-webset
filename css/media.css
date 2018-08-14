@@ -33,6 +33,23 @@
         font-size: 28px;
         letter-spacing: 10px;
     }
+
+    .customer{
+        /* background: url(../images/backgroud/hand.png); */
+        background-size:100% 100%; 
+        width:100%;
+        padding-top: 50px;
+        font-size: 20px;
+        color: #9f9f9f;
+    }
+
+    .wrapper{
+        padding-bottom: 50px;
+    }
+
+    .footer-detail{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -42,7 +59,24 @@
     }
     .slogan {
         font-size: 50px;
-        letter-spacing: 20px;
+    }
+
+    .customer{
+        background: url(../images/backgroud/hand.png);
+        background-size:100% 100%; 
+        width:100%;  
+        padding-top: 50px;
+        font-size: 20px;
+        color: #9f9f9f;
+    }
+    
+    .wrapper{
+        height: 800px;
+        padding-bottom: 50px;
+    }
+
+    .footer-detail{
+        display: block;
     }
 }
 

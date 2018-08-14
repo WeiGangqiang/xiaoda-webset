@@ -1,8 +1,5 @@
-section.wrapper{
-    height: 800px;
-    padding-bottom: 50px;
-}
-section.contact{
+
+.contact{
     background: #ffffff url(../images/backgroud/worldmap.png) no-repeat center center/cover;
     height: 100%;
     /* background-size:auto 100%; */
@@ -11,7 +8,7 @@ section.contact{
       /* position: relative; */
 }
 
-section.contact ul{
+/* section.contact ul{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -19,17 +16,7 @@ section.contact ul{
 
 section.contact li{
     line-height: 2;
-}
-
-
-.customer{
-    background: url(../images/backgroud/hand.png);
-    background-size:100% 100%; 
-    width:100%;  
-    padding-top: 50px;
-    font-size: 20px;
-    color: #9f9f9f;
-}
+} */
 
 .customer-img {
     height: 360px;
@@ -73,12 +60,6 @@ section.contact li{
 #footer #p{
     color: #418d49;
 }
-.copyright{
-    /* height: 50px;
-    top: 850px; */
-    background-color: rgba(0,0,0,0.7);
-    height: 50px
-}
 .footer-copyright a,
 .footer-copyright p{
     color:rgb(255,255,255);
@@ -88,7 +69,8 @@ section.contact li{
 .footer-text {
     line-height: 50px;
     height: 50px;
-    color: #ffffff;
+    color: #f9f9f9;
+    font-size: 12px;
 }
 
 .clearfix:after, .clearfix:before,
