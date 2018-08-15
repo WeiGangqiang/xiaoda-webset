@@ -31,10 +31,10 @@
             </a>
         </div>
         <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#home">首页</a></li>
-                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#customer">商业案例</a></li>
-                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#contact">关于我们</a></li>
+            <ul class="nav navbar-nav mybar">
+                <li style="background: rgba(0,0,0,0.7);"><a style="color: #ffffff;" href="#home">首页</a></li>
+                <li style="background: rgba(0,0,0,0.7);"><a style="color: #ffffff;" href="#customer">商业案例</a></li>
+                <li style="background: rgba(0,0,0,0.7);"><a style="color: #ffffff;" href="#contact">关于我们</a></li>
             </ul>
         </div>
     </div> 
@@ -280,6 +280,11 @@
     addjustSize();
     $(window).resize(addjustSize)
     $('body').scrollspy({ target: '#navbar-example' })
+
+    $(".mybar>li>a").click(function(){
+        console.log('mybar on click')
+        $(".mybar").parent().removeClass('show')
+    })
 
     function addjustSize()
     {
