@@ -56,6 +56,13 @@
     .footer-detail{
         display: none;
     }
+    .about-title {
+        padding-top: 60px;
+    }
+    .about-desc{
+        padding-top: 10px;
+    }
+    
 }
 
 @media screen and (min-width: 1025px) {
@@ -89,6 +96,20 @@
         height: 50px;
         padding-top: 0px;
     }
+    .about-our-company {
+        font-size: 20px;
+    }
+    .contact-divide-line {
+        width: 60px;
+        height: 3px;
+        margin: 20px auto 0;
+        background-color: #1cb2b9;
+    }
+    
+    .about-desc{
+        padding-top: 100px;
+    }
+    
 }
 
 /* @media (max-width: 767px) {

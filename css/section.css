@@ -8,16 +8,6 @@
       /* position: relative; */
 }
 
-/* section.contact ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-section.contact li{
-    line-height: 2;
-} */
-
 .customer-img {
     height: 360px;
     border: 2px;
@@ -33,11 +23,6 @@ section.contact li{
 .customer-logo {
     height: 60px;
     padding-bottom: 20px;
-}
-.inner-page{
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    padding-top: 100px;
 }
 
 .footer-menu {
