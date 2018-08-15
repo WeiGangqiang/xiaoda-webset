@@ -129,7 +129,7 @@
     <section class="wrapper contact" id="contact" style="overflow: hidden;">
         <div class="container">
             <div class="row features navbar-reserve about-title">
-                    <div class="col-md-12 text-center">
+                    <div class="col-xl-12 text-center">
                         <h1 >关于我们</h1>
                         <div class="contact-divide-line"></div>
                     </div>
@@ -154,17 +154,17 @@
 <footer id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-4 text-center footer-text footer-detail">
+            <div class="col-md-4 text-center footer-text footer-detail">
                 <a href="#home">小哒智能科技（上海）有限公司</a>
             </div>
-            <div class="col-sm-12 col-md-4 text-center footer-text footer-detail">
+            <div class="col-md-4 text-center footer-text footer-detail">
                     <a href="http://www.miitbeian.gov.cn/">沪ICP备18019466号</a>
             </div>
             <nav>
-                <div class="col-xs-6 col-md-2 footer-text text-center">
+                <div class="col-sm-6 col-md-2 footer-text text-center">
                     <a href="#home">首页</a>
                 </div>
-                <div class="col-xs-6 col-md-2 footer-text text-center">
+                <div class="col-sm-6 col-md-2 footer-text text-center">
                     <a href="#customer">商业案例</a>
                 </div>
             </nav>
@@ -285,7 +285,8 @@
     {
         console.log($(window).height())
         let sectionHeight = $(window).height()
-        if ($(window).width() >= 720)  {
+        //md
+        if ($(window).width() >= 992)  {
             $('.jumbotron').css("height", sectionHeight);
             // $('.copyright').css("top", $(sectionHeight) - $(".copyright").css("height"));       
             $('.wrapper').css("height", sectionHeight);
