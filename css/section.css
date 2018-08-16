@@ -9,7 +9,7 @@
 }
 
 .customer-img {
-    height: 360px;
+    width: 100%;
     border: 2px;
     border-style: solid;
     border-color: #ffffff;
@@ -133,4 +133,8 @@
 .mybar {
     background: (0,0,0,0.7) !important;
     color: #ffffff;
+}
+
+.embed-responsive-iphone{
+    padding-bottom: 178%
 }

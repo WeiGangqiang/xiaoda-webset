@@ -1,5 +1,4 @@
-@media screen and (max-width: 991px) {
-
+@media screen and (max-width: 1199px) {
     .app-desc{
         /* display: block; */
         /* padding-top: 20px; */
@@ -73,9 +72,12 @@
     .collapse-color {
         color: #ffffff;
     }
+    .big-screen{
+        display: none;
+    }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
     .sub-title {
         font-size: 30px;
         letter-spacing: 10px;
@@ -118,7 +120,9 @@
     .about-desc{
         padding-top: 100px;
     }
-    
+    /* .big-screen{
+        display: block;
+    } */
 }
 
 /* @media (max-width: 767px) {
