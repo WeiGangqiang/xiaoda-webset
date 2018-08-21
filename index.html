@@ -53,17 +53,17 @@
         </div>  
     </div>
 
-    <section class = "wrapper customer" id="customer">
+    <section class = "customer" id="customer">
         <div class="container"  style="height: 100%;">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1 class="text-center"> 商业案例 </h1>
+                    <h2 class="text-center"> 商业案例 </h1>
                     <hr>
                     <p class= "text-left" style="padding-left: 5px; padding-right: 5px"> &nbsp &nbsp 依托于自主研发的自然语言理解平台及对话管理系统，小哒智能科技在AR游戏、智能客服、智能导购、智能音箱、个人助理领域构建了体验优秀的智能对话机器人系统。</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3  col-xs-12" style="text-align: center;">
+                <div class="col-md-3  col-xs-12" style="text-align: center;">
                     <!-- <a onmouseover="javascript:showImg('qiuyeqing');" onmouseout="javascript:hideImg('qiuyeqing');"><img src="images/customer/kingsoft.png" style="height: 60px; padding-bottom: 20px"> </a> -->
                     <a><img src="images/customer/kingsoft.png" href="#home" class=customer-logo> </a>
                     <div>
@@ -76,7 +76,7 @@
                         <p class="text-left customer-desc">&nbsp &nbsp 为金山游戏“剑网3”的AR NPC角色赋能了流畅的智能对话能力</p>
                     </div>
                 </div> 
-                <div class="col-lg-3  col-xs-12" style="text-align: center;">
+                <div class="col-md-3  col-xs-12" style="text-align: center;">
                     <!-- <a onmouseover="javascript:showImg('qiuyeqing');" onmouseout="javascript:hideImg('qiuyeqing');"><img src="images/customer/kingsoft.png" style="height: 60px; padding-bottom: 20px"> </a> -->
                     <a><img src="images/customer/intramirror.png" href="#home" class=customer-logo> </a>
                     <div>
@@ -89,7 +89,7 @@
                         <p class="text-left customer-desc">&nbsp &nbsp 为奢侈品牌代购平台IntraMirror构建的智能客服系统。系统涵盖了在线实时客服咨询、智能导购、移动支付等复杂业务场景。</p>
                     </div>
                 </div>
-                <div class="col-lg-3  col-xs-12" style="text-align: center;">
+                <div class="col-md-3  col-xs-12" style="text-align: center;">
                     <a><img src="images/customer/xiaomi.png" href="#home" class=customer-logo> </a>
                     <div>
                         <div class="embed-responsive embed-responsive-iphone">
@@ -98,7 +98,7 @@
                         <p class="text-left customer-desc">&nbsp &nbsp 为小米AI音箱开发的“我的课表”、“有问有答”等智能语音技能，深获好评。</p>
                     </div>
                 </div> 
-                <div class="col-lg-3  col-xs-12" style="text-align: center;">
+                <div class="col-md-3  col-xs-12" style="text-align: center;">
                     <a><img src="images/customer/survey.jpg" href="#home" class=customer-logo> </a>
                     <div>
                         <div class="embed-responsive embed-responsive-iphone">
@@ -115,13 +115,13 @@
     <section class="correct" id="correct">
         <div class="container">
                 <div class="row features navbar-reserve">
-                        <div class="col-lg-12 text-center">
+                        <div class="col-md-12 text-center">
                             <h1 >文本纠错</h1>
                             <div class="divide-line"></div>
                         </div>
                 </div>   
                 <div class="row">
-                        <div class="col-lg-12 correct-box">
+                        <div class="col-md-12 correct-box">
                                 <div class="input-box">
                                         <p> 请输入您想纠错文字：   </p>
                                         <textarea id= "input_text" class="form-control"  style="font-size:16px;" rows="3" name=textarea></textarea>
@@ -166,17 +166,17 @@
 <footer id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 text-center footer-text footer-detail">
+            <div class="col-md-4 text-center footer-text footer-detail">
                 <a href="#home">小哒智能科技（上海）有限公司</a>
             </div>
-            <div class="col-lg-4 text-center footer-text footer-detail">
+            <div class="col-md-4 text-center footer-text footer-detail">
                     <a href="http://www.miitbeian.gov.cn/">沪ICP备18019466号</a>
             </div>
             <nav>
-                <div class="col-xs-6 col-lg-2 footer-text text-center">
+                <div class="col-xs-6 col-md-2 footer-text text-center">
                     <a href="#home">首页</a>
                 </div>
-                <div class="col-xs-6 col-lg-2 footer-text text-center">
+                <div class="col-xs-6 col-md-2 footer-text text-center">
                     <a href="#customer">商业案例</a>
                 </div>
             </nav>
@@ -303,7 +303,7 @@
         console.log($(window).height())
         let sectionHeight = $(window).height()
         //md
-        if ($(window).width() >= 1199)  {
+        if ($(window).width() >= 992)  {
             $('.jumbotron').css("height", sectionHeight);
             // $('.copyright').css("top", $(sectionHeight) - $(".copyright").css("height"));       
             $('.wrapper').css("height", sectionHeight);
