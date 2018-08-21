@@ -301,19 +301,17 @@
     function addjustSize()
     {
         console.log($(window).height())
-        let sectionHeight = $(window).height()
         //md
         if ($(window).width() >= 992)  {
-            $('.jumbotron').css("height", sectionHeight);
+            $('.jumbotron').css("height", $(window).height());
             // $('.copyright').css("top", $(sectionHeight) - $(".copyright").css("height"));       
-            $('.wrapper').css("height", sectionHeight);
-            $('.contact').css("height", sectionHeight - 60);
-            if ($sectionHeight >= 800) {
-                $('.customer-wrapper').css("height", sectionHeight);
-            }
+            $('.wrapper').css("height", $(window).height());
+            $('.contact').css("height", $(window).height() - 60);
+
+            $('.customer-wrapper').css("height", $(window).height());
         }
-        $('.intro').css("height", sectionHeight);
-        $('.intro').css("padding-top", sectionHeight * 0.4);
+        $('.intro').css("height", $(window).height());
+        $('.intro').css("padding-top", $(window).height() * 0.4);
     }
 
     function navFun(){
