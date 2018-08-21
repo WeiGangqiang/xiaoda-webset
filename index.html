@@ -53,7 +53,7 @@
         </div>  
     </div>
 
-    <section class = "customer" id="customer">
+    <section class = "customer customer-wrapper" id="customer">
         <div class="container"  style="height: 100%;">
             <div class="row">
                 <div class="col-xs-12">
@@ -308,6 +308,9 @@
             // $('.copyright').css("top", $(sectionHeight) - $(".copyright").css("height"));       
             $('.wrapper').css("height", sectionHeight);
             $('.contact').css("height", sectionHeight - 60);
+            if ($sectionHeight >= 800) {
+                $('.customer-wrapper').css("height", sectionHeight);
+            }
         }
         $('.intro').css("height", sectionHeight);
         $('.intro').css("padding-top", sectionHeight * 0.4);

@@ -29,7 +29,8 @@
     }
     .slogan {
         font-size: 28px;
-        letter-spacing: 10px;
+        letter-spacing: 5px;
+        padding-top: 10%;
     }
 
     .customer{
@@ -85,6 +86,7 @@
     }
     .slogan {
         font-size: 50px;
+        padding-top: 30%;
     }
 
     .customer{
