@@ -33,9 +33,10 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav mybar">
-                <li class="collapse-back"><a class="collapse-color" href="#home">首页</a></li>
-                <li class="collapse-back"><a class="collapse-color" href="#customer">商业案例</a></li>
-                <li class="collapse-back"><a class="collapse-color" href="#contact">关于我们</a></li>
+                <li class="collapse-back"><a class="collapse-color" style="font-size: 12px;" href="#home">首页</a></li>
+                <li class="collapse-back"><a class="collapse-color" style="font-size: 12px;" href="#customer">商业案例</a></li>
+                <li class="collapse-back"><a class="collapse-color" style="font-size: 12px;" href="#contact">关于我们</a></li>
+                <li class="collapse-back"><a class="collapse-color" style="font-size: 12px;" href="#joinus">加入我们</a></li>
             </ul>
         </div>
     </div> 
@@ -152,33 +153,40 @@
             <div class="col-sm-6 col-xs-12">
                 <div id="accordion" role="tablist" aria-multiselectable="false">
                     <div class="panel panel-default panel-job">
-                        <div class="panel-heading" role="tab" id="headingOne">
+                        <div class="panel-heading panel-job-header" role="tab" id="headingOne">
                         <h4 class="panel-title job-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <a class="collapsed job-title-font" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 自然语言处理工程师
                             </a>
                         </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">      
                             <div class="row"> 
-                                <div class="col-xs-2"> 
+                                <div class="col-xs-2" style="padding-right:0"> 
                                     <p class="job-desc">岗位职责</p>
                                 </div>
                                 <div class="col-xs-10"> 
-                                    <p class="job-desc"> 负责文本处理相关研发工作<br>
-                                        包括但不限于数据挖掘、自然语言NLP处理、信息抽取、智能问答、语义理解、意图识别等
+                                    <p class="job-desc">
+                                        研究自然语言处理领域的相关技术和前沿算法，并将NLP技术应用到具体产品中解决实际问题并进行算法优化；<br>
+                                        利用自然语言处理的理论和方法解决文本关键信息抽取/语义项抽取/浅层语义理解等问题。<br>
+                                        利用监督或无监督的方法完成文本自聚类以及文本领域分类等常规问题。<br>
+                                        及时跟踪最新的自然语言处理的方法，优化改进算法提升语义理解的准确性
                                     </p>
                                 </div>
-                                <hr>
-                                <div class="col-xs-2"> 
+                            </div>
+                            <div class="row">     
+                                <div class="col-xs-2" style="padding-right:0"> 
                                     <p class="job-desc">专业技术</p>
                                 </div>
                                 <div class="col-xs-10"> 
                                     <p class="job-desc"> 
                                         计算机／数学／统计学／模式识别相关专业，本科以上学历；<br>
-                                        熟悉 Linux 平台、Java/Scala/Python/C++ 中一种或多种语言编程；<br>
+                                        熟练掌握主要的自然语言处理相关算法；
+                                        熟练掌握主要的模式识别和机器学习算法；
                                         熟悉机器学习的理论基础，有深度学习研发经验，熟悉 tensorflow/caffe/pytorch 优先；<br>
                                         在聊天机器人等方向有相关研发经验优先；<br>
+                                        了解主要的语音识别算法者优先；<br>
+                                        熟悉 Linux 平台、Java/Scala/Python/C++ 中一种或多种语言编程；<br>
                                         优秀的分析问题和解决问题的能力，对解决具有挑战性问题充满激情；<br>
                                         具有良好的沟通能力，和良好的团队合作精神。<br>                                    
                                     </p>
@@ -187,109 +195,128 @@
                         </div>
                     </div>
                     <div class="panel panel-default panel-job">
-                        <div class="panel-heading" role="tab" id="headingTwo">
+                        <div class="panel-heading panel-job-header" role="tab" id="headingTwo">
                         <h4 class="panel-title job-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            机器学习
+                            <a class="collapsed job-title-font" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            深度学习工程师
                             </a>
                         </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="row"> 
-                                <div class="col-xs-2"> 
+                                <div class="col-xs-2" style="padding-right:0"> 
                                     <p class="job-desc">岗位职责</p>
                                 </div>
                                 <div class="col-xs-10"> 
-                                    <p class="job-desc"> 根据机器的语义解析结果，进行人工纠错和标注。<br>
-                                            更新完善各类数据的标注规范。<br>
-                                            抽检数据 <br>
+                                    <p class="job-desc">
+                                        负责团队深度学习算法的实现和跟踪，重点关注在序NLU领域的应用<br>
+                                        应用深度学习模型对文本进行模型训练、建模开发<br>
+                                        负责深度学习训练平台的维护
                                     </p>
                                 </div>
-                                <hr>
-                                <div class="col-xs-2"> 
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2" style="padding-right:0"> 
                                     <p class="job-desc">专业技术</p>
                                 </div>
                                 <div class="col-xs-10"> 
-                                    <p class="job-desc"> 本科及以上，文科专业优先（语言学、教育、新闻专业等等<br>
-                                            逻辑严谨，思辨能力强<br>
+                                    <p class="job-desc">
+                                        具备深度学习相关背景，熟悉深度学习在NLP和语音识别领域的应用，有相关工作背景优先；<br>
+                                        具有深度学习/AI的相关工作背景，或者在该领域有较深的学术研究；<br>
+                                        具备机器学习/深度学习相关的工程能力，熟悉scikit-learn、tensorflow、caffe等；<br>
+                                        具备良好的沟通表达能力和团队合作意识。
                                     </p>
                                 </div>
                             </div>       
                         </div>
                     </div>
                     <div class="panel panel-default panel-job">
-                        <div class="panel-heading" role="tab" id="headingThree">
+                        <div class="panel-heading panel-job-header" role="tab" id="headingThree">
                         <h4 class="panel-title job-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            大数据
+                            <a class="collapsed job-title-font" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            大数据开发工程师
                             </a>
                         </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                             <div class="row"> 
-                                <div class="col-xs-2"> 
+                                <div class="col-xs-2" style="padding-right:0"> 
                                     <p class="job-desc">岗位职责</p>
                                 </div>
                                 <div class="col-xs-10"> 
-                                    <p class="job-desc"> 根据机器的语义解析结果，进行人工纠错和标注。<br>
-                                            更新完善各类数据的标注规范。<br>
-                                            抽检数据 <br>
+                                    <p class="job-desc">
+                                        管理、优化并维护Hadoop、Spark等集群，提供高可用、高效的大数据存储和计算支撑；<br>
+                                        深入Hadoop/Hive/Spark 等源码研究和二次开发，解决各种线上问题，参与到开源社区建设和代码贡献；<br>
+                                        研究业界最新的大数据技术，提供有前瞻性的大数据基础架构解决方案
                                     </p>
                                 </div>
-                                <hr>
-                                <div class="col-xs-2"> 
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2" style="padding-right:0"> 
                                     <p class="job-desc">专业技术</p>
                                 </div>
                                 <div class="col-xs-10"> 
-                                    <p class="job-desc"> 本科及以上，文科专业优先（语言学、教育、新闻专业等等<br>
-                                            逻辑严谨，思辨能力强<br>
+                                    <p class="job-desc">
+                                        精通/Java/Scala程序开发(至少一种)，熟悉Linux/Unix开发环境; <br>
+                                        熟悉常用开源分布式系统，精通Hadoop/Hive/Spark 之一源代码;<br>
+                                        有大规模分布式系统开发、维护经验，有故障处理能力，源码级开发能力;<br>
+                                        具有良好的沟通协作能力，具有较强的分享精神；<br>
+                                        对Kudu、Kylin、Impala、ElasticSearch，github等系统有深入使用和底层研究者优先
                                     </p>
                                 </div>
                             </div>       
                         </div>
                     </div>
                     <div class="panel panel-default panel-job">
-                        <div class="panel-heading" role="tab" id="headingFour">
+                        <div class="panel-heading panel-job-header" role="tab" id="headingFour">
                         <h4 class="panel-title job-title">
-                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <a class="collapsed job-title-font" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                             前端工程师
                             </a>
                         </h4>
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                             <div class="row"> 
-                                <div class="col-xs-2"> 
+                                <div class="col-xs-2" style="padding-right:0"> 
                                     <p class="job-desc">岗位职责</p>
                                 </div>
                                 <div class="col-xs-10"> 
-                                    <p class="job-desc"> 根据机器的语义解析结果，进行人工纠错和标注。<br>
-                                            更新完善各类数据的标注规范。<br>
-                                            抽检数据 <br>
+                                    <p class="job-desc">
+                                        实现与视觉稿、交互稿一致的跨平台、浏览器的兼容性好的前端产品，包括h5，android、小程序、iOS<br>
+                                        设计编写高复用性、逻辑清晰、易于维护的功能组件，并能解决应用各种浏览器中的兼容性问题<br>
+                                        推动与优化已有前端项目的基础架构与组件抽象<br>
+                                        持续跟进业界先进技术，持续优化产品的使用体验
                                     </p>
                                 </div>
-                                <hr>
-                                <div class="col-xs-2"> 
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2" style="padding-right:0"> 
                                     <p class="job-desc">专业技术</p>
                                 </div>
                                 <div class="col-xs-10"> 
-                                    <p class="job-desc"> 本科及以上，文科专业优先（语言学、教育、新闻专业等等<br>
-                                            逻辑严谨，思辨能力强<br>
+                                    <p class="job-desc">
+                                        精通JavaScript（ES5、ES6标准）、DOM等前端技术，掌握面向对象编程思想<br>
+                                        精通HTML5、CSS3，熟悉页面架构和布局<br>
+                                        深刻理解Web标准，对可用性、可访问性等相关知识有深入的了解和实践经验<br>
+                                        熟悉Vue、React等前端框架的使用，了解其工作原理及优化途径<br>
+                                        优秀的分析问题和解决问题的能力，对解决具有挑战性问题充满激情；<br>
+                                        具有良好的沟通能力，和良好的团队合作精神。
                                     </p>
                                 </div>
                             </div>       
                         </div>
                     </div>
                     <div class="panel panel-default panel-job">
-                            <div class="panel-heading" role="tab" id="headingFive">
+                            <div class="panel-heading panel-job-header" role="tab" id="headingFive">
                             <h4 class="panel-title job-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                UI设计师
+                                <a class="collapsed job-title-font" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                交互设计师
                                 </a>
                             </h4>
                             </div>
                             <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                                 <div class="row"> 
-                                    <div class="col-xs-2"> 
+                                    <div class="col-xs-2" style="padding-right:0"> 
                                         <p class="job-desc">岗位职责</p>
                                     </div>
                                     <div class="col-xs-10"> 
@@ -297,8 +324,9 @@
                                                 准确理解产品需求和交互原型，独⽴完成产品的交互设计，与产品经理及开发团队配合，参与设计体验、交互呈现；<br>
                                         </p>
                                     </div>
-                                    <hr>
-                                    <div class="col-xs-2"> 
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-2" style="padding-right:0"> 
                                         <p class="job-desc">专业技术</p>
                                     </div>
                                     <div class="col-xs-10"> 
@@ -315,16 +343,16 @@
                             </div>
                         </div>
                         <div class="panel panel-default panel-job">
-                            <div class="panel-heading" role="tab" id="headingSix">
+                            <div class="panel-heading panel-job-header" role="tab" id="headingSix">
                             <h4 class="panel-title job-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <a class="collapsed job-title-font" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                 平面设计师
                                 </a>
                             </h4>
                             </div>
                             <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
                                 <div class="row"> 
-                                    <div class="col-xs-2"> 
+                                    <div class="col-xs-2" style="padding-right:0"> 
                                         <p class="job-desc">岗位职责</p>
                                     </div>
                                     <div class="col-xs-10"> 
@@ -333,8 +361,9 @@
                                                 线上线下的平⾯广告素材设计、社交平台内的配图等视觉创意设计
                                         </p>
                                     </div>
-                                    <hr>
-                                    <div class="col-xs-2"> 
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-2" style="padding-right:0"> 
                                         <p class="job-desc">专业技术</p>
                                     </div>
                                     <div class="col-xs-10"> 
@@ -356,18 +385,18 @@
 <footer id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-4 text-center footer-text footer-detail">
-                <a href="#home">小哒智能科技（上海）有限公司</a>
+            <div class="col-sm-4 text-center footer-detail">
+                <a class="footer-text" href="#home">小哒智能科技（上海）有限公司</a>
             </div>
-            <div class="col-sm-4 text-center footer-text footer-detail">
-                    <a href="http://www.miitbeian.gov.cn/">沪ICP备18019466号</a>
+            <div class="col-sm-4 text-center footer-detail">
+                    <a class="footer-text" href="http://www.miitbeian.gov.cn/">沪ICP备18019466号</a>
             </div>
             <nav>
-                <div class="col-xs-6 col-sm-2 footer-text text-center">
-                    <a href="#home">首页</a>
+                <div class="col-xs-6 col-sm-2 text-center">
+                    <a class="footer-text" href="#home">首页</a>
                 </div>
-                <div class="col-xs-6 col-sm-2 footer-text text-center">
-                    <a href="#customer">商业案例</a>
+                <div class="col-xs-6 col-sm-2 text-center">
+                    <a class="footer-text" href="#customer">商业案例</a>
                 </div>
             </nav>
         </div>
@@ -383,7 +412,7 @@
     addjustSize();
     $(window).resize(addjustSize)
     // $('body').scrollspy({ target: '#navbar-example' })
-    $('#collapseOne').collapse('show')
+
     $(".mybar>li>a").click(function(){
         console.log('mybar on click')
         $(".mybar").parent().removeClass('show')

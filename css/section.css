@@ -46,7 +46,7 @@
 .footer-text {
     line-height: 50px;
     height: 50px;
-    color: #f9f9f9;
+    /* color: #f9f9f9; */
     font-size: 12px;
 }
 
@@ -137,6 +137,10 @@
     width: 100%;
 }
 
+.job-title-font {
+    font-size: 14px;
+}
+
 .job-desc {
     margin-left: 10px;
     padding-right: 0;
@@ -148,4 +152,8 @@
 
 .panel-job {
     margin-bottom: 10px;
+}
+
+.panel-job-header {
+    height: 50px;
 }
