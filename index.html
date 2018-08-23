@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3  col-xs-12" style="text-align: center;">
+                <div class="col-sm-3  col-xs-12" style="text-align: center;">
                     <!-- <a onmouseover="javascript:showImg('qiuyeqing');" onmouseout="javascript:hideImg('qiuyeqing');"><img src="images/customer/kingsoft.png" style="height: 60px; padding-bottom: 20px"> </a> -->
                     <a><img src="images/customer/kingsoft.png" href="#home" class=customer-logo> </a>
                     <div>
@@ -77,7 +77,7 @@
                         <p class="text-left customer-desc">&nbsp &nbsp 为金山游戏“剑网3”的AR NPC角色赋能了流畅的智能对话能力</p>
                     </div>
                 </div> 
-                <div class="col-md-3  col-xs-12" style="text-align: center;">
+                <div class="col-sm-3  col-xs-12" style="text-align: center;">
                     <!-- <a onmouseover="javascript:showImg('qiuyeqing');" onmouseout="javascript:hideImg('qiuyeqing');"><img src="images/customer/kingsoft.png" style="height: 60px; padding-bottom: 20px"> </a> -->
                     <a><img src="images/customer/intramirror.png" href="#home" class=customer-logo> </a>
                     <div>
@@ -90,7 +90,7 @@
                         <p class="text-left customer-desc">&nbsp &nbsp 为奢侈品牌代购平台IntraMirror构建的智能客服系统。系统涵盖了在线实时客服咨询、智能导购、移动支付等复杂业务场景。</p>
                     </div>
                 </div>
-                <div class="col-md-3  col-xs-12" style="text-align: center;">
+                <div class="col-sm-3  col-xs-12" style="text-align: center;">
                     <a><img src="images/customer/xiaomi.png" href="#home" class=customer-logo> </a>
                     <div>
                         <div class="embed-responsive embed-responsive-iphone">
@@ -99,7 +99,7 @@
                         <p class="text-left customer-desc">&nbsp &nbsp 为小米AI音箱开发的“我的课表”、“有问有答”等智能语音技能，深获好评。</p>
                     </div>
                 </div> 
-                <div class="col-md-3  col-xs-12" style="text-align: center;">
+                <div class="col-sm-3  col-xs-12" style="text-align: center;">
                     <a><img src="images/customer/survey.jpg" href="#home" class=customer-logo> </a>
                     <div>
                         <div class="embed-responsive embed-responsive-iphone">
@@ -111,33 +111,6 @@
             </div>
         </div>
     </section>
-
-    <!-- 
-    <section class="correct" id="correct">
-        <div class="container">
-                <div class="row features navbar-reserve">
-                        <div class="col-md-12 text-center">
-                            <h1 >文本纠错</h1>
-                            <div class="divide-line"></div>
-                        </div>
-                </div>   
-                <div class="row">
-                        <div class="col-md-12 correct-box">
-                                <div class="input-box">
-                                        <p> 请输入您想纠错文字：   </p>
-                                        <textarea id= "input_text" class="form-control"  style="font-size:16px;" rows="3" name=textarea></textarea>
-                                </div>
-
-                                <div class = "correct-button-box">
-                                    <button type="button" onclick="error_correct()" class="btn btn-primary center-block">纠错</button>
-                                </div>
-                                <p> 分析结果：   </p>
-                                <div id= "output-box" class="output-box">
-                                </div>
-                        </div>
-                </div>
-        </div>
-    </section> -->
 
     <section class="wrapper contact" id="contact" style="overflow: hidden;">
         <div class="container">
@@ -167,17 +140,17 @@
 <footer id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 text-center footer-text footer-detail">
+            <div class="col-sm-4 text-center footer-text footer-detail">
                 <a href="#home">小哒智能科技（上海）有限公司</a>
             </div>
-            <div class="col-md-4 text-center footer-text footer-detail">
+            <div class="col-sm-4 text-center footer-text footer-detail">
                     <a href="http://www.miitbeian.gov.cn/">沪ICP备18019466号</a>
             </div>
             <nav>
-                <div class="col-xs-6 col-md-2 footer-text text-center">
+                <div class="col-xs-6 col-sm-2 footer-text text-center">
                     <a href="#home">首页</a>
                 </div>
-                <div class="col-xs-6 col-md-2 footer-text text-center">
+                <div class="col-xs-6 col-sm-2 footer-text text-center">
                     <a href="#customer">商业案例</a>
                 </div>
             </nav>
@@ -187,112 +160,13 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
-<script type="text/javascript">
-    function showImg(imgid){ document.getElementById(imgid).style.display = "block"; } 
-    function hideImg(imgid){ document.getElementById(imgid).style.display = "none"; } 
-
-    var myVideo1=document.getElementById("video-demo1");
-    var myVideo2=document.getElementById("video-demo2");
-    function playPause1()
-    { 
-        if (myVideo1.paused) 
-        myVideo1.play(); 
-        else 
-        myVideo1.pause(); 
-    } 
-
-    function playPause2()
-    { 
-        if (myVideo2.paused) 
-        myVideo2.play(); 
-        else 
-        myVideo2.pause(); 
-    } 
-    function error_correct()
-    {
-        var input_text = document.getElementById("input_text");
-        var output_text = document.getElementById("output-box")
-        console.log(" input_text" + input_text.value)
-        getCorrectResult(input_text.value)
-    }
-    
-    function getCorrectResult(input)
-    {
-        $.support.cors = true;
-        $.post("http://47.100.99.213/correct", {text:input}, function(result){
-            generate_output(input, result)
-            console.log(result)
-       });
-    }
-
-    function generate_output(input, result){
-          var output_text = document.getElementById("output-box")
-          output_text.innerHTML = ""
-          var equal_start = -1;
-          var nequal_start = -1;
-          for(var i = 0; i < input.length; i++){
-            var c = input.charAt(i); 
-            var d = result.charAt(i);
-            if(c == d){
-                if (equal_start == -1){
-                    equal_start = i;
-                }
-                if(nequal_start != -1){
-                    output_text.appendChild(createHightlightP(result.substring(nequal_start, i)))
-                    console.log("not equal Is" + result.substring(nequal_start, i))
-                    nequal_start = -1
-                }
-            }
-            else{
-                if(nequal_start == -1){
-                    nequal_start = i;
-                }
-
-                if(equal_start != -1){
-                    output_text.appendChild(createNormalP(result.substring(equal_start, i)))
-                    console.log("equal is " + result.substring(equal_start, i))
-                    equal_start = -1
-                }
-            }
-         }
-         if(equal_start != -1){
-            console.log("equal is " + result.substring(equal_start, i))
-            output_text.appendChild(createNormalP(result.substring(equal_start, i)))
-         }
-
-         if(nequal_start != -1){
-            console.log("not equal Is" + result.substring(nequal_start, i))
-            output_text.appendChild(createHightlightP(result.substring(nequal_start, i)))
-        }
-    }
-
-
-    function createNormalP(text)
-    {
-        var normalP = document.createElement("p");
-        var txt     = document.createTextNode(text); 
-        normalP.appendChild(txt)
-        return normalP
-    }
-
-    function createHightlightP(text)
-    {
-        var normalP = document.createElement("p");
-        normalP.style.backgroundColor = "yellow"
-        var txt     = document.createTextNode(text); 
-        normalP.appendChild(txt)
-        return normalP
-    }
-
-</script>
-
 <script>
     $(function(){
     navFun();
     $('.navbar-nav>li>a.active').click();
     addjustSize();
     $(window).resize(addjustSize)
-    $('body').scrollspy({ target: '#navbar-example' })
+    // $('body').scrollspy({ target: '#navbar-example' })
 
     $(".mybar>li>a").click(function(){
         console.log('mybar on click')
@@ -302,8 +176,8 @@
     function addjustSize()
     {
         console.log($(window).height())
-        //md
-        if ($(window).width() >= 992)  {
+        //sm
+        if ($(window).width() >= 720)  {
             $('.jumbotron').css("height", $(window).height());
             // $('.copyright').css("top", $(sectionHeight) - $(".copyright").css("height"));       
             $('.wrapper').css("height", $(window).height());

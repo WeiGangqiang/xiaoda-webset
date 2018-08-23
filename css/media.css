@@ -1,4 +1,4 @@
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 719px) {
     .app-desc{
         /* display: block; */
         /* padding-top: 20px; */
@@ -101,7 +101,7 @@
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 720px) {
     .sub-title {
         font-size: 30px;
         letter-spacing: 10px;
