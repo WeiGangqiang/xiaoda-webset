@@ -153,14 +153,14 @@
 }
 
 .partner{
-    background: #010102;
+    background-color:#202328;
     min-height: 750px;
-    background-size:auto 100%;
+    /* background-size:auto 100%;
     background-position: center 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    -webkit-background-size: cover;
+    -webkit-background-size: cover; */
 
     padding-top: 100px;
     /* padding-block-end: 100px; */
