@@ -153,31 +153,14 @@
 }
 
 .partner{
-    background-color:#202328;
-    min-height: 750px;
-    background-size:auto 100%;
-    /* background-position: center 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-    background-size: cover;
-    -webkit-background-size: cover;
-
-    padding-top: 100px;
-    /* padding-block-end: 100px; */
-    font-size: 15px;
-    color : rgb(255,255,255);
+    background: #ffffff;
     height: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    /* background-size:auto 100%; */
+    /* padding-top: 30px; */
+    font-size: 20px;
+      /* position: relative; */
 }
 
-.partner-divide-line {
-    width: 180px;
-    height: 3px;
-    margin: 20px auto 0;
-    background-color: #ffffff;
-}
 .partner-img {
     margin-top: 20px;
     margin-bottom: 20px;
