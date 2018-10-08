@@ -150,9 +150,9 @@
         padding-bottom: 50px;
     }
 
-    /* .footer-detail{
-        display: block;
-    } */
+    .footer-detail{
+        display: none;
+    }
     .dada-logo {
         height: 50px;
         padding-top: 0px;
