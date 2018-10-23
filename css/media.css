@@ -60,6 +60,9 @@
     .about-our-company {
         font-size: 16px;
     }
+    .about-our-contact {
+        font-size: 20px;
+    } 
 
     .about-title {
         padding-top: 60px;
@@ -166,6 +169,10 @@
     .about-our-company {
         font-size: 20px;
     }
+
+    .about-our-contact {
+        font-size: 24px;
+    } 
     .about-title {
         padding-top: 60px;
     }
